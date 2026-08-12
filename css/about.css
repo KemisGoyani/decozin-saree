@@ -1,0 +1,160 @@
+/*=========================
+ABOUT PAGE
+==========================*/
+
+.about-banner {
+
+    padding: 180px 0 100px;
+
+    background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        url("../images/about/about-banner.png");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.about-banner h1 {
+
+    font-size: 60px;
+    font-weight: 700;
+
+}
+
+.about-banner p {
+
+    max-width: 650px;
+    margin: 20px auto 0;
+
+    font-size: 18px;
+
+}
+
+.about-section {
+
+    padding: 100px 0;
+    background: #fff;
+
+}
+
+.section-subtitle {
+
+    color: #C9A227;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.about-section h2 {
+
+    margin: 20px 0;
+    font-size: 42px;
+    font-weight: 700;
+
+}
+
+.about-section p {
+
+    color: #666;
+    line-height: 30px;
+
+}
+
+.mission-section {
+
+    padding: 80px 0;
+    background: #FFF8F3;
+
+}
+
+.mission-card {
+
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+
+}
+
+.mission-card i {
+
+    font-size: 45px;
+    color: #7B1436;
+    margin-bottom: 20px;
+
+}
+
+.counter-section {
+
+    padding: 80px 0;
+    background: #7B1436;
+    color: white;
+
+}
+
+.counter-section h2 {
+
+    font-size: 46px;
+    font-weight: 700;
+
+}
+
+.about-cta {
+
+    padding: 100px 0;
+    background: white;
+    text-align: center;
+
+}
+
+.cta-btn {
+
+    display: inline-block;
+    margin-top: 20px;
+
+    background: #7B1436;
+    color: white;
+
+    padding: 15px 40px;
+
+    border-radius: 40px;
+
+    text-decoration: none;
+
+    transition: .3s;
+
+}
+
+.cta-btn:hover {
+
+    background: #C9A227;
+    color: #222;
+
+}
+
+@media(max-width:768px) {
+
+    .about-banner {
+
+        padding: 150px 0 80px;
+
+    }
+
+    .about-banner h1 {
+
+        font-size: 40px;
+
+    }
+
+    .about-section h2 {
+
+        font-size: 30px;
+
+    }
+
+}

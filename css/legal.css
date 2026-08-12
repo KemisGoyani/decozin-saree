@@ -1,0 +1,154 @@
+/* ===============================
+   Legal Pages (Terms & Privacy)
+=================================*/
+
+.legal-section {
+    padding: 180px 0px 80px;
+    background: #FFF8F3;
+    min-height: 100vh;
+}
+
+.legal-card {
+    background: #fff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+.legal-header {
+    text-align: center;
+    padding: 45px 40px 25px;
+    border-bottom: 1px solid #ececec;
+}
+
+.legal-header h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.legal-header p {
+    color: #777;
+    font-size: 16px;
+    margin: 0;
+}
+
+.legal-body {
+    padding: 45px;
+}
+
+.legal-body h3,
+.legal-body h4 {
+    color: #7B1436;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.legal-body p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.9;
+    text-align: justify;
+}
+
+.legal-body ul {
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.legal-body ul li {
+    font-size: 17px;
+    color: #555;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
+.legal-body strong {
+    color: #222;
+}
+
+.legal-contact {
+    margin-top: 35px;
+    padding: 25px;
+    background: #FFF8F3;
+    border-left: 5px solid #7B1436;
+    border-radius: 10px;
+}
+
+.legal-contact p {
+    margin-bottom: 10px;
+}
+
+.legal-divider {
+    margin: 40px 0;
+    border-color: #eee;
+}
+
+/* Links */
+
+.legal-body a {
+    color: #7B1436;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.legal-body a:hover {
+    color: #C9A227;
+}
+
+/* Responsive */
+
+@media (max-width:991px) {
+
+    .legal-section {
+        padding: 150px 15px 60px;
+    }
+
+    .legal-header h1 {
+        font-size: 38px;
+    }
+
+    .legal-body {
+        padding: 30px;
+    }
+
+    .legal-body h3,
+    .legal-body h4 {
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .legal-section {
+        padding: 130px 10px 40px;
+    }
+
+    .legal-header {
+        padding: 30px 20px;
+    }
+
+    .legal-header h1 {
+        font-size: 30px;
+    }
+
+    .legal-body {
+        padding: 20px;
+    }
+
+    .legal-body p,
+    .legal-body li {
+        font-size: 15px;
+    }
+
+    .legal-body h3,
+    .legal-body h4 {
+        font-size: 22px;
+    }
+
+}

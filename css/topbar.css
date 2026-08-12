@@ -1,0 +1,60 @@
+/* ===========================
+   Top Bar
+=========================== */
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1050;
+
+    background: #7B1436;
+    color: white;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.announcement {
+
+    position: relative;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.announcement-item {
+
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
+
+}
+
+.announcement-item.active {
+
+    opacity: 1;
+
+}
+
+.announcement i {
+
+    color: #C9A227;
+    margin-right: 10px;
+
+}
+
+@media(max-width:768px) {
+
+    .top-bar {
+
+        font-size: 12px;
+
+    }
+
+}

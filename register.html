@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Decozin Saree Store</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+    <div id="topbar"></div>
+
+    <div id="navbar"></div>
+
+    <section class="auth-section">
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+
+                <div class="col-lg-6">
+
+                    <div class="auth-card">
+
+                        <div class="text-center mb-4">
+
+                            <h2>Create Account</h2>
+
+                            <p>
+
+                                Join Decozin and shop premium sarees.
+
+                            </p>
+
+                        </div>
+
+                        <form id="registerForm">
+
+                            <div class="mb-3">
+                                <label>Full Name</label>
+                                <input type="text" id="name" class="form-control">
+                                <small id="nameError" class="input-error"></small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Email Address</label>
+                                <input type="email" id="email" class="form-control">
+                                <small id="emailError" class="input-error"></small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Phone Number</label>
+                                <input type="text" id="phone" class="form-control">
+                                <small id="phoneError" class="input-error"></small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Password</label>
+
+                                <div class="password-box">
+                                    <input type="password" id="password" class="form-control">
+                                    <button type="button" id="togglePassword">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </div>
+
+                                <small id="passwordError" class="input-error"></small>
+                            </div>
+
+                            <div class="mb-3">
+                                <label>Confirm Password</label>
+
+                                <div class="password-box">
+                                    <input type="password" id="confirmPassword" class="form-control">
+                                    <button type="button" id="toggleConfirmPassword">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </button>
+                                </div>
+
+                                <small id="confirmPasswordError" class="input-error"></small>
+                            </div>
+
+                            <div class="form-check mb-4">
+
+                                <input class="form-check-input" type="checkbox" id="agreeTerms">
+
+                                <label class="form-check-label" for="agreeTerms">
+                                    I agree to the
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#termsModal">
+                                        Terms & Conditions
+                                    </a>
+                                    and
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#privacyModal">
+                                        Privacy Policy
+                                    </a>
+                                </label>
+
+                                <small id="termsError" class="input-error"></small>
+
+                            </div>
+
+                            <button type="submit" class="login-btn">
+                                Send OTP
+                            </button>
+
+                            <div class="text-center mt-4">
+
+                                Already have an account?
+
+                                <a href="login.html">
+
+                                    Login
+
+                                </a>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Terms Modal -->
+
+    <div class="modal fade" id="termsModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h4 class="modal-title">
+
+                        Decozin Saree Store - Terms & Conditions
+
+                    </h4>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <h5>1. Account Registration</h5>
+
+                    <p>
+
+                        Customers must provide accurate information while creating an account.
+                        You are responsible for maintaining the confidentiality of your account credentials.
+
+                    </p>
+
+                    <h5>2. Orders</h5>
+
+                    <p>
+
+                        All orders are subject to product availability and confirmation.
+                        Decozin reserves the right to cancel any order due to pricing errors,
+                        stock issues, or suspected fraudulent activity.
+
+                    </p>
+
+                    <h5>3. Pricing</h5>
+
+                    <p>
+
+                        Prices displayed on our website are in Indian Rupees (INR) and include
+                        applicable taxes unless stated otherwise.
+
+                    </p>
+
+                    <h5>4. Shipping</h5>
+
+                    <p>
+
+                        Orders are dispatched within the estimated processing time.
+                        Delivery timelines may vary depending on your location and courier service.
+
+                    </p>
+
+                    <h5>5. Returns & Refunds</h5>
+
+                    <p>
+
+                        Customers may request returns according to our Return Policy.
+                        Returned products must be unused and in original packaging.
+
+                    </p>
+
+                    <h5>6. Payments</h5>
+
+                    <p>
+
+                        Payments are processed securely through trusted payment gateways.
+                        Decozin does not store your debit or credit card details.
+
+                    </p>
+
+                    <h5>7. User Responsibilities</h5>
+
+                    <p>
+
+                        Users must not misuse the website, upload harmful content,
+                        attempt unauthorized access, or interfere with website security.
+
+                    </p>
+
+                    <h5>8. Intellectual Property</h5>
+
+                    <p>
+
+                        All images, logos, product descriptions, and website content
+                        are the intellectual property of Decozin and may not be copied
+                        without written permission.
+
+                    </p>
+
+                    <h5>9. Limitation of Liability</h5>
+
+                    <p>
+
+                        Decozin is not responsible for indirect, incidental,
+                        or consequential damages arising from the use of this website.
+
+                    </p>
+
+                    <h5>10. Contact</h5>
+
+                    <p>
+
+                        Email :
+                        decozinhelp@gmail.com
+
+                        <br>
+
+                        Support Hours :
+
+                        Monday to Saturday
+                        10:00 AM - 7:00 PM
+
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+
+                        I Understand
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-scrollable modal-lg">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h4>
+
+                        Privacy Policy
+
+                    </h4>
+
+                    <button class="btn-close" data-bs-dismiss="modal">
+
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <h5>Information We Collect</h5>
+
+                    <p>
+
+                        We collect your name, email address, phone number,
+                        shipping address, and order details to process your purchases.
+
+                    </p>
+
+                    <h5>Payment Security</h5>
+
+                    <p>
+
+                        Payment information is securely processed through trusted
+                        payment gateways. We never store card details.
+
+                    </p>
+
+                    <h5>Cookies</h5>
+
+                    <p>
+
+                        We use cookies to improve your browsing experience,
+                        remember your preferences, and personalize content.
+
+                    </p>
+
+                    <h5>How We Use Your Data</h5>
+
+                    <p>
+
+                        Your information is used to process orders,
+                        provide customer support,
+                        improve our services,
+                        and send important order updates.
+
+                    </p>
+
+                    <h5>Data Protection</h5>
+
+                    <p>
+
+                        We implement industry-standard security measures
+                        to protect your personal information.
+
+                    </p>
+
+                    <h5>Third Party Services</h5>
+
+                    <p>
+
+                        We may share necessary information with trusted courier,
+                        payment, and logistics partners to complete your order.
+
+                    </p>
+
+                    <h5>Contact</h5>
+
+                    <p>
+
+                        Email :
+
+                        decozinhelp@gmail.com
+
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-primary" data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- OTP Verification Modal -->
+
+    <div class="modal fade" id="otpModal" tabindex="-1">
+
+        <div class="modal-dialog modal-dialog-centered">
+
+            <div class="modal-content otp-modal">
+
+                <div class="modal-header border-0">
+
+                    <h4 class="modal-title">
+                        Verify Email
+                    </h4>
+
+                </div>
+
+                <div class="modal-body text-center">
+
+                    <i class="fa-solid fa-envelope-circle-check otp-icon"></i>
+
+                    <p>
+
+                        We've sent a 6-digit verification code to
+
+                    </p>
+
+                    <h6 id="otpEmail"></h6>
+
+                    <div class="otp-boxes">
+
+                        <input type="text" maxlength="1" class="otp-digit">
+
+                        <input type="text" maxlength="1" class="otp-digit">
+
+                        <input type="text" maxlength="1" class="otp-digit">
+
+                        <input type="text" maxlength="1" class="otp-digit">
+
+                        <input type="text" maxlength="1" class="otp-digit">
+
+                        <input type="text" maxlength="1" class="otp-digit">
+
+                    </div>
+
+                    <small id="otpTimer">
+                        OTP expires in 02:00
+                    </small>
+
+                    <div class="mt-3">
+
+                        <a href="#" id="resendOtp">
+                            Resend OTP
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer border-0">
+
+                    <button class="login-btn w-100" id="verifyOtpBtn">
+
+                        Verify OTP
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Toast -->
+    <div class="toast-container position-fixed top-0 end-0 p-3">
+
+        <div id="liveToast" class="toast align-items-center text-bg-success border-0" role="alert">
+
+            <div class="d-flex">
+
+                <div class="toast-body" id="toastMessage">
+                    OTP Sent Successfully
+                </div>
+
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast">
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/components.js"></script>
+
+    <script src="js/navbar.js"></script>
+
+    <script src="js/config.js"></script>
+
+    <script src="js/register.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Shop | Decozin Saree Store</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/shop.css">
+
+</head>
+
+<body>
+
+    <div id="topbar"></div>
+
+    <div id="navbar"></div>
+
+
+    <!-- =====================================================
+         SHOP PAGE
+    ====================================================== -->
+
+    <section class="shop-page">
+
+        <div class="container">
+
+            <!-- HEADER -->
+
+            <div class="shop-header">
+
+                <h1>Our Saree Collection</h1>
+
+                <p>
+                    Elegant sarees crafted for every occasion.
+                </p>
+
+            </div>
+
+
+            <div class="row g-4">
+
+
+                <!-- =================================================
+                     FILTER SIDEBAR
+                ================================================== -->
+
+                <div class="col-lg-3">
+
+                    <div class="filter-box">
+
+                        <div class="filter-heading">
+
+                            <h4>
+                                <i class="fa-solid fa-filter"></i>
+                                Filters
+                            </h4>
+
+                            <button type="button" id="resetFilters" class="reset-filter-btn">
+
+                                Reset
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- SEARCH -->
+
+                        <div class="filter-group">
+
+                            <label>
+                                Search Saree
+                            </label>
+
+                            <div class="search-wrapper">
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                <input type="text" id="searchInput" class="form-control" placeholder="Search saree...">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- MATERIAL -->
+
+                        <div class="filter-group">
+
+                            <label for="materialFilter">
+                                Material
+                            </label>
+
+                            <select id="materialFilter" class="form-select">
+
+                                <option value="">
+                                    All Materials
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- OCCASION -->
+
+                        <div class="filter-group">
+
+                            <label for="occasionFilter">
+                                Occasion
+                            </label>
+
+                            <select id="occasionFilter" class="form-select">
+
+                                <option value="">
+                                    All Occasions
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- COLOR -->
+
+                        <div class="filter-group">
+
+                            <label for="colorFilter">
+                                Color
+                            </label>
+
+                            <select id="colorFilter" class="form-select">
+
+                                <option value="">
+                                    All Colors
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- BLOUSE -->
+
+                        <div class="filter-group">
+
+                            <label for="blouseFilter">
+                                Blouse Included
+                            </label>
+
+                            <select id="blouseFilter" class="form-select">
+
+                                <option value="">
+                                    All
+                                </option>
+
+                                <option value="Yes">
+                                    Yes
+                                </option>
+
+                                <option value="No">
+                                    No
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- PRICE -->
+
+                        <div class="filter-group">
+
+                            <label>
+                                Price Range
+                            </label>
+
+                            <div class="price-inputs">
+
+                                <input type="number" id="minPrice" class="form-control" placeholder="Min ₹" min="0">
+
+                                <input type="number" id="maxPrice" class="form-control" placeholder="Max ₹" min="0">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SORT -->
+
+                        <div class="filter-group">
+
+                            <label for="sortFilter">
+                                Sort By
+                            </label>
+
+                            <select id="sortFilter" class="form-select">
+
+                                <option value="newest">
+                                    Newest
+                                </option>
+
+                                <option value="price-low">
+                                    Price: Low to High
+                                </option>
+
+                                <option value="price-high">
+                                    Price: High to Low
+                                </option>
+
+                                <option value="name-az">
+                                    Name: A to Z
+                                </option>
+
+                                <option value="name-za">
+                                    Name: Z to A
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================================
+                     PRODUCTS
+                ================================================== -->
+
+                <div class="col-lg-9">
+
+
+                    <!-- TOP BAR -->
+
+                    <div class="shop-products-header">
+
+                        <div>
+
+                            <span id="productCount">
+                                Loading products...
+                            </span>
+
+                        </div>
+
+                        <button type="button" id="mobileFilterButton" class="mobile-filter-btn">
+
+                            <i class="fa-solid fa-filter"></i>
+
+                            Filters
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- PRODUCT LIST -->
+
+                    <div id="productList" class="row g-4">
+
+                    </div>
+
+
+                    <!-- NO PRODUCTS -->
+
+                    <div id="noProducts" class="no-products d-none">
+
+                        <i class="fa-solid fa-box-open"></i>
+
+                        <h3>No Sarees Found</h3>
+
+                        <p>
+                            Try changing your search or filters.
+                        </p>
+
+                        <button type="button" id="resetFiltersEmpty" class="btn btn-dark">
+
+                            Reset Filters
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- LOADING -->
+
+                    <div id="productLoading" class="product-loading">
+
+                        <div class="spinner-border" role="status">
+
+                            <span class="visually-hidden">
+                                Loading...
+                            </span>
+
+                        </div>
+
+                        <p>
+                            Loading sarees...
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="newsletter"></div>
+
+    <div id="footer"></div>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Components -->
+    <script src="js/components.js"></script>
+
+    <script src="js/navbar.js"></script>
+
+    <!-- Shop -->
+    <script src="js/shop.js"></script>
+
+    <!-- Auth -->
+    <script src="js/auth-check.js"></script>
+
+    <script src="js/navbar-user.js"></script>
+
+</body>
+
+</html>

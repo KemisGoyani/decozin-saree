@@ -1,0 +1,40 @@
+@import url("topbar.css");
+@import url("navbar.css");
+@import url("hero.css");
+@import url("featured.css");
+@import url("why-choose.css");
+@import url("promo-banner.css");
+@import url("testimonials.css");
+@import url("newsletter.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    overflow-x: hidden;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-left: auto;
+    flex-wrap: nowrap;
+}
+
+#userMenu {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}

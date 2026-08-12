@@ -1,0 +1,194 @@
+.hero-slider {
+
+    background: #FFF8F3;
+    padding-top: 110px;
+
+}
+
+.hero-slider .carousel-item {
+    min-height: 100vh;
+}
+
+.hero-badge {
+
+    display: inline-block;
+    padding: 10px 22px;
+    background: #F8E7CC;
+    border-radius: 50px;
+    color: #7B1436;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+}
+
+.hero-slider h1 {
+
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+.hero-slider h1 span {
+
+    color: #7B1436;
+
+}
+
+.hero-slider p {
+
+    font-size: 18px;
+    line-height: 32px;
+    margin: 30px 0;
+    color: #555;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+.btn-primary-custom {
+
+    background: #7B1436;
+    color: white;
+    padding: 16px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+
+}
+
+.btn-primary-custom:hover {
+
+    background: #C9A227;
+    color: black;
+
+}
+
+.btn-outline-custom {
+
+    border: 2px solid #7B1436;
+    padding: 16px 40px;
+    border-radius: 40px;
+    text-decoration: none;
+    color: #7B1436;
+    font-weight: 600;
+
+}
+
+.btn-outline-custom:hover {
+
+    background: #7B1436;
+    color: white;
+
+}
+
+.hero-img {
+
+    max-height: 720px;
+    width: auto;
+    animation: float 5s ease-in-out infinite;
+
+}
+
+.carousel-indicators {
+
+    bottom: 30px;
+
+}
+
+.carousel-indicators button {
+
+    width: 14px !important;
+    height: 14px !important;
+    border-radius: 50%;
+
+}
+
+@keyframes float {
+
+    0% {
+
+        transform: translateY(0);
+
+    }
+
+    50% {
+
+        transform: translateY(-15px);
+
+    }
+
+    100% {
+
+        transform: translateY(0);
+
+    }
+
+}
+
+@media(max-width:991px) {
+
+    .hero-slider {
+
+        text-align: center;
+        padding-top: 150px;
+
+    }
+
+    .hero-slider h1 {
+
+        font-size: 42px;
+
+    }
+
+    .hero-buttons {
+
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    .hero-img {
+
+        max-height: 450px;
+        margin-top: 40px;
+
+    }
+
+}
+
+@media(max-width:576px) {
+
+    .hero-slider h1 {
+
+        font-size: 34px;
+
+    }
+
+    .hero-slider p {
+
+        font-size: 16px;
+
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+
+    }
+
+    .btn-primary-custom,
+    .btn-outline-custom {
+
+        width: 100%;
+        text-align: center;
+
+    }
+
+}

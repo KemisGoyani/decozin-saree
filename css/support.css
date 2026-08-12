@@ -1,0 +1,150 @@
+.support-section {
+    padding: 180px 0 80px;
+    background: #FFF8F3;
+}
+
+.support-card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    overflow: hidden;
+}
+
+.support-header {
+    padding: 50px;
+    text-align: center;
+}
+
+.support-header h1 {
+    font-size: 50px;
+    font-weight: 700;
+    color: #222;
+}
+
+.support-header p {
+    color: #666;
+    margin: 15px 0 30px;
+}
+
+.support-search {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+}
+
+.support-search input {
+    border-radius: 50px 0 0 50px;
+    height: 55px;
+}
+
+.support-search button {
+    width: 70px;
+    border: none;
+    background: #7B1436;
+    color: #fff;
+    border-radius: 0 50px 50px 0;
+}
+
+.support-body {
+    padding: 50px;
+}
+
+.support-box {
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: 35px 20px;
+    transition: .3s;
+}
+
+.support-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, .08);
+}
+
+.support-box i {
+    font-size: 42px;
+    color: #7B1436;
+    margin-bottom: 20px;
+}
+
+.support-box h4 {
+    font-weight: 600;
+}
+
+.support-box p {
+    color: #666;
+}
+
+.faq-title {
+    margin-bottom: 25px;
+    color: #7B1436;
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    background: #7B1436;
+    color: #fff;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.contact-box {
+    margin-top: 60px;
+    background: #FFF8F3;
+    border-radius: 15px;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-box h3 {
+    color: #7B1436;
+    font-weight: 700;
+}
+
+.contact-box i {
+    font-size: 30px;
+    color: #7B1436;
+    margin-bottom: 15px;
+}
+
+.contact-box p {
+    margin-bottom: 0;
+}
+
+@media(max-width:768px) {
+
+    .support-section {
+        padding: 150px 15px 60px;
+    }
+
+    .support-header {
+        padding: 30px;
+    }
+
+    .support-header h1 {
+        font-size: 36px;
+    }
+
+    .support-body {
+        padding: 25px;
+    }
+
+    .support-search {
+        flex-direction: column;
+    }
+
+    .support-search input {
+        border-radius: 50px;
+        margin-bottom: 15px;
+    }
+
+    .support-search button {
+        width: 100%;
+        border-radius: 50px;
+        height: 50px;
+    }
+
+}

@@ -1,0 +1,153 @@
+/* ==========================
+Promo Banner
+========================== */
+
+.promo-banner {
+
+    padding: 120px 0;
+
+    background:
+        linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)),
+        url("../images/banners/promo.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    color: white;
+
+    text-align: center;
+
+}
+
+.promo-content span {
+
+    display: inline-block;
+
+    background: #C9A227;
+
+    color: #222;
+
+    padding: 8px 18px;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.promo-content h2 {
+
+    font-size: 60px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+}
+
+.promo-content h3 {
+
+    font-size: 34px;
+
+    margin-bottom: 25px;
+
+}
+
+.promo-content p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 30px;
+
+    margin-bottom: 40px;
+
+}
+
+.promo-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+}
+
+.promo-btn {
+
+    background: #7B1436;
+
+    padding: 16px 40px;
+
+    border-radius: 40px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.promo-btn:hover {
+
+    background: #C9A227;
+
+    color: #222;
+
+}
+
+.promo-outline {
+
+    border: 2px solid white;
+
+    padding: 16px 40px;
+
+    border-radius: 40px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.promo-outline:hover {
+
+    background: white;
+
+    color: #222;
+
+}
+
+@media(max-width:768px) {
+
+    .promo-content h2 {
+
+        font-size: 40px;
+
+    }
+
+    .promo-content h3 {
+
+        font-size: 24px;
+
+    }
+
+    .promo-buttons {
+
+        flex-direction: column;
+
+    }
+
+}
